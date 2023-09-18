@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset_css/fontawesome-free-6.4.0/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./asset_css/index.css">
+    
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="music_player_app">
+        <div class="dashboard ">
+            <div class="header">
+                <h4>Now playing(Horus-N)</h4>
+                <h2>String 57th & 9th</h2>
+            </div>
+
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('./img/tunit.jpg');">
+
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="btn btn-repeat" >
+                    <i class="fa-sharp fa-solid fa-arrow-rotate-right"></i>
+                </div>
+
+                <div class="btn btn-prev" >
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+
+                <div class="btn btn-toggle-play" >
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-play"></i>
+                </div>
+
+                <div class="btn btn-next" >
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+
+                <div class="btn btn-random" >
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+
+                <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+
+        <div class="playList">
+            <div class="song">
+                <div class="thumb" style="background-image: url('./img/tunit.jpg');">
+
+                </div>
+
+                <div class="body">
+                    <h3 class="title">Tên bài hát</h3>
+                    <p class="author">
+                        Ca sĩ / nhóm nhạc
+                    </p>
+                </div>
+
+                <div class="option">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <script src="./asset_js/index.js"></script>
+</body>
+</html>
