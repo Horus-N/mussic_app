@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+.music_player_app{
+ margin: auto;
+ max-width: 480px;
+}
+.music_player_app .dashboard{
+    padding: 16px 16px 14px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 480px;
+    border-bottom: 1px solid #ebebee;
+}
+
+/* header */
+.music_player_app .dashboard .header{
+    text-align: center;
+}
+
+/* cd đĩa */
+.music_player_app .dashboard .cd{
+    margin: 20px auto;
+    width: 200px;
+}
+
+.music_player_app .dashboard .cd-thumb{
+    padding-top:100%;
+    border-radius: 50%;
+    margin: auto;
+    background-color: aqua;
+    background-image: url(../img/tunit.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+/* Phần nút */
+.music_player_app .dashboard .controls{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+font-size: 25px;
+margin: 15px 0;
+}
+
+.dashboard .controls .btn{
+    width: 40px;
+    
+}
+.dashboard .controls .btn i{
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard .controls .btn-toggle-play{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.dashboard .controls .btn-toggle-play .fa-pause{
+    display: none; 
+}
+
+.pause .controls .btn-toggle-play .fa-pause{
+    display: block; 
+}
+.pause .controls .btn-toggle-play .fa-play{
+    display: none; 
+}
+
+.dashboard .controls .progress{
+    width: 100%;
+    margin: 30px 0 15px;
+    -webkit-appearance: none;
+    background-color: #d3d3d3;
+    height: 8px;
+    cursor: pointer;
+}
+
+/* Playlist ds nhạc */
+.music_player_app .playList{
+    background-color: #f0f0f0;
+    margin-top: 448px;
+    padding: 1px 0;
+    width: 100%;
+    max-width: 480px;
+}
+
+.music_player_app .playList .song{
+    display: flex;
+    margin: 10px 10px;
+    border-radius: 8px;
+    padding: 8px 0;
+    background-color: #fff;
+   
+}
+
+.music_player_app .playList .song.active{
+    color:#fff;
+    background-color: rgba(255, 0, 0, 0.384);
+}
+
+.music_player_app .playList .song:active{
+    opacity: 0.8;
+}
+
+.playList .song .thumb{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.playList .song .body{
+    flex: 2;
+    padding: 0 30px;
+}
+
+.playList .song  .option{
+    flex: 1;
+    font-size: 20px;
+    padding: 0 15px;
+    text-align: right;
+}
+
+.dashboard .controls .active{
+    color: aqua;
+}
+
